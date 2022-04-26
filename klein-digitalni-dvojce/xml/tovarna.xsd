@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+ <xs:element name="tovarna">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="stroje" maxOccurs="unbounded" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+ <xs:element name="stroje">
+ <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="stroj" maxOccurs="unbounded" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+ 
+   
+  <xs:element name="stroj">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="specifikace" />
+			</xs:sequence>
+			<xs:attribute name="pujcka" type="xs:boolean" />
+			<xs:attribute name="id" use="required" type="xs:integer"/>
+			<xs:attribute name="barva" type="xs:string" />
+		</xs:complexType>
+	</xs:element>
+	
+	
+	
+ <xs:element name="specifikace">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nazev" type="xs:string" />
+        <xs:group ref="rozmery"/>
+				<xs:element name="cena" type="xs:integer" />
+				<xs:element name="vyrobce" type="xs:string" />
+        <xs:element name="vaha" type="xs:integer" />
+        <xs:element name="misto_uziti" type="xs:string" />
+        <xs:element name="pocet_dilu" type="xs:integer" />
+      </xs:sequence>
+  </xs:complexType>
+  </xs:element>	
+	
+	
+	
+ <!-- skupina-->
+
+<xs:group name="rozmery">
+            <xs:sequence>
+                <xs:element ref="sirka"/>
+                <xs:element ref="vyska"/>
+                 <xs:element ref="hloubka"/>
+            </xs:sequence>
+        </xs:group>  
+  
+<xs:element name="sirka">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="sirka_jednotka" type="jednotky_delky"/>
+      </xs:extension>
+    </xs:simpleContent>
+ </xs:complexType>
+</xs:element>
+
+<xs:element name="vyska">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="vyska_jednotka" type="jednotky_delky"/>
+      </xs:extension>
+    </xs:simpleContent>
+ </xs:complexType>
+</xs:element>
+
+<xs:element name="hloubka">
+  <xs:complexType>
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="hloubka_jednotka" type="jednotky_delky"/>
+      </xs:extension>
+    </xs:simpleContent>
+ </xs:complexType>
+</xs:element>
+	 <!-- datovy typ -->
+<xs:simpleType name="jednotky_delky">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="cm"></xs:enumeration>  
+    <xs:enumeration value="m"></xs:enumeration>  
+    <xs:enumeration value="inch"></xs:enumeration>  
+  </xs:restriction>
+</xs:simpleType>
+
+
+</xs:schema>

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<tovarna xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tovarna.xsd">
+    <stroje>
+        <stroj id="1" pujcka="true" barva="Černá">
+            <specifikace>
+                <nazev>Stolní soustruh</nazev>
+                <sirka sirka_jednotka="m">2</sirka>
+                <vyska vyska_jednotka="m">0.38</vyska>
+                <hloubka hloubka_jednotka="m">0.4</hloubka>
+                <cena>31702</cena>
+                <vyrobce>Bernardo</vyrobce>
+                <vaha>4000</vaha>
+                <misto_uziti>Továrna 1</misto_uziti>
+                <pocet_dilu>20</pocet_dilu>
+            </specifikace>
+        </stroj>
+    </stroje>
+    <stroje>
+        <stroj id="2" pujcka="false" barva="Červená">
+            <specifikace>
+                <nazev>Stojanová vrtačka</nazev>
+                <sirka sirka_jednotka="m">0.34</sirka>
+                <vyska vyska_jednotka="m">1.01</vyska>
+                <hloubka hloubka_jednotka="m">0.65</hloubka>
+                <cena>7461</cena>
+                <vyrobce>GÜDE</vyrobce>
+                <vaha>1000</vaha>
+                <misto_uziti>Továrna 2</misto_uziti>
+                <pocet_dilu>15</pocet_dilu>
+            </specifikace>
+        </stroj>
+    </stroje>
+    <stroje>
+        <stroj id="3" pujcka="false" barva="Zelená">
+            <specifikace>
+                <nazev>Lis</nazev>
+                <sirka sirka_jednotka="m">0.7</sirka>
+                <vyska vyska_jednotka="m">1.85</vyska>
+                <hloubka hloubka_jednotka="m">0.85</hloubka>
+                <cena>27766</cena>
+                <vyrobce>Asta</vyrobce>
+                <vaha>500</vaha>
+                <misto_uziti>Továrna 1</misto_uziti>
+                <pocet_dilu>8</pocet_dilu>
+            </specifikace>
+        </stroj>
+    </stroje>
+    <stroje>
+        <stroj id="4" pujcka="false" barva="Černá">
+            <specifikace>
+                <nazev>Nůžky na plech</nazev>
+                <sirka sirka_jednotka="m">2.58</sirka>
+                <vyska vyska_jednotka="m">1.2</vyska>
+                <hloubka hloubka_jednotka="m">2.09</hloubka>      
+                <cena>299990</cena>
+                <vyrobce>MTBS</vyrobce>
+                <vaha>500</vaha>
+                <misto_uziti>Továrna 2</misto_uziti>
+                <pocet_dilu>4</pocet_dilu>
+            </specifikace>
+        </stroj>
+    </stroje>
+    <stroje>
+        <stroj id="5" pujcka="true" barva="Zelená">
+            <specifikace>
+                <nazev>Laserový řezač a rytec</nazev>
+                <sirka sirka_jednotka="m">0.8</sirka>
+                <vyska vyska_jednotka="m">0.25</vyska>
+                <hloubka hloubka_jednotka="m">0.67</hloubka>
+                <cena>97583</cena>
+                <vyrobce>Flux</vyrobce>
+                <vaha>50</vaha>
+                <misto_uziti>IT</misto_uziti>
+                <pocet_dilu>100</pocet_dilu>
+            </specifikace>
+        </stroj>
+    </stroje>
+    <stroje>  
+        <stroj id="6" pujcka="true" barva="Červená">
+            <specifikace>
+                <nazev>3D tiskárna Pro3</nazev>
+                <sirka sirka_jednotka="m">3</sirka>
+                <vyska vyska_jednotka="m">0.76</vyska>
+                <hloubka hloubka_jednotka="m">0.62</hloubka>          
+                <cena>150724</cena>
+                <vyrobce>Raise3D</vyrobce>
+                <vaha>50</vaha>
+                <misto_uziti>IT</misto_uziti>
+                <pocet_dilu>80</pocet_dilu>
+            </specifikace>
+        </stroj>
+    </stroje>
+    <stroje>
+        <stroj id="7" pujcka="false" barva="Zelená">
+            <specifikace>
+                <nazev>Bruska ZS 970P</nazev>
+                <sirka sirka_jednotka="m">0.91</sirka>
+                <vyska vyska_jednotka="m">1.6</vyska>
+                <hloubka hloubka_jednotka="m">1.3</hloubka>
+                <cena>150649</cena>
+                <vyrobce>Holzmann</vyrobce>
+                <vaha>150</vaha>
+                <misto_uziti>Brousírna</misto_uziti>
+                <pocet_dilu>54</pocet_dilu>
+            </specifikace>
+        </stroj>
+    </stroje>
+    <stroje> 
+        <stroj id="8" pujcka="true" barva="Černá">
+            <specifikace>
+                <nazev>Vysokozdvižný vozík ČZ E16</nazev>
+                <sirka sirka_jednotka="m">1</sirka>
+                <vyska vyska_jednotka="m">1.5</vyska>
+                <hloubka hloubka_jednotka="m">2.7</hloubka>
+                <cena>100000</cena>
+                <vyrobce>ČZ</vyrobce>
+                <vaha>3100</vaha>
+                <misto_uziti>Sklad</misto_uziti>
+                <pocet_dilu>623</pocet_dilu>
+            </specifikace>
+        </stroj>
+    </stroje>
+    <stroje>
+        <stroj id="9" pujcka="true" barva="Zelená">
+            <specifikace>
+                <nazev>Fréza Proma SF-40/1500 </nazev>
+                <sirka sirka_jednotka="m">0.61</sirka>
+                <vyska vyska_jednotka="m">0.315</vyska>
+                <hloubka hloubka_jednotka="m">0.36</hloubka>
+                <cena>7886</cena>
+                <vyrobce>Proma</vyrobce>
+                <vaha>1500</vaha>
+                <misto_uziti>Továrna 1</misto_uziti>
+                <pocet_dilu>54</pocet_dilu>
+            </specifikace>
+        </stroj>
+    </stroje>
+    <stroje> 
+        <stroj id="10" pujcka="false" barva="Žlutá">
+            <specifikace>
+                <nazev>Stavební kotoučová pila Holzkraft BKS 501</nazev>
+                <sirka sirka_jednotka="m">0.8</sirka>
+                <vyska vyska_jednotka="m">1.1</vyska>
+                <hloubka hloubka_jednotka="m">1.87</hloubka>
+                <cena>25398</cena>
+                <vyrobce>Holzkraft</vyrobce>
+                <vaha>1500</vaha>
+                <misto_uziti>Pila</misto_uziti>
+                <pocet_dilu>22</pocet_dilu>
+            </specifikace>
+        </stroj>
+    </stroje>
+</tovarna>
